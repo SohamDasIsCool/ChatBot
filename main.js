@@ -26,6 +26,7 @@ recognition.onresult=function run(event){
 function speak1() {
     var synth=window.speechSynthesis;
     speak_data="Hi! Nice to meet you";
+    document.getElementById("I").innerHTML="Hi! Nice to meet you";
     var utterThis=new SpeechSynthesisUtterance(speak_data);
     synth.speak(utterThis);
     document.getElementById("say").innerHTML='Say "What is your name?" or "What is your age?" or"Describe yourself!" '
@@ -34,6 +35,7 @@ function speak1() {
 function speak2() {
     var synth=window.speechSynthesis;
     speak_data="My Name Is soham das.";
+        document.getElementById("I").innerHTML="My Name Is Soham Das.";
     var utterThis=new SpeechSynthesisUtterance(speak_data);
     synth.speak(utterThis);
 }
@@ -41,6 +43,7 @@ function speak2() {
 function speak3() {
     var synth=window.speechSynthesis;
     speak_data="I am 11 years old!" ;
+    document.getElementById("I").innerHTML="I am 11 yrs old.";
     var utterThis=new SpeechSynthesisUtterance(speak_data);
     synth.speak(utterThis);
 }
@@ -48,6 +51,7 @@ function speak3() {
 function speak4() {
     var synth=window.speechSynthesis;
     speak_data="My name is Soham das! I am cool and daniel is dumb!" ;
+        document.getElementById("I").innerHTML="My name is Soham das! I am cool and daniel is dumb!";
     var utterThis=new SpeechSynthesisUtterance(speak_data);
     synth.speak(utterThis);
 }
